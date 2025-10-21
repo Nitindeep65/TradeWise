@@ -4,6 +4,34 @@ import Stats from '@/components/stats';
 import Features from '@/components/features';
 import CTA from '@/components/CTA';
 import Footer from '@/components/footer';
+import PricingCards from '@/components/pricing/pricing-component-01';
+
+const pricingData = [
+  {
+    id: 'basic',
+    title: 'Basic',
+    description: 'Perfect for starters',
+    monthly: 9.99,
+    annual: 99.99,
+    features: ['Feature 1', 'Feature 2', 'Feature 3'],
+  },
+  {
+    id: 'pro',
+    title: 'Pro',
+    description: 'For growing businesses',
+    monthly: 19.99,
+    annual: 199.99,
+    features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4'],
+  },
+  {
+    id: 'enterprise',
+    title: 'Enterprise',
+    description: 'For large organizations',
+    monthly: 29.99,
+    annual: 299.99,
+    features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4', 'Feature 5'],
+  },
+];
 
 export default function LandingPage() {
   return (
@@ -22,6 +50,7 @@ export default function LandingPage() {
       <Hero />
       <Stats />
       <Features />
+      <PricingCards pricingData={pricingData} />
       <CTA />
       <Footer />
     </div>

@@ -1,7 +1,11 @@
 'use client';
 
+import { Banner1 } from "./banner1";
+
 export default function Hero() {
   return (
+    <>
+  <Banner1 />
     <section className="relative min-h-screen overflow-hidden">
       {/* Animated Glow Orbs */}
       <div className="absolute w-[600px] h-[600px] rounded-full bg-emerald-400 opacity-15 blur-[120px] -top-48 -right-24 animate-float" />
@@ -87,5 +91,6 @@ export default function Hero() {
         }
       `}</style>
     </section>
+    </>
   );
 }
